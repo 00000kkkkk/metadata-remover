@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --background-secondary: #151515;
+  --foreground: #fafafa;
+  --foreground-secondary: #a3a3a3;
+  --foreground-tertiary: #525252;
+
+  --border: #262626;
+  --border-hover: #404040;
+
+  --card-bg: rgba(23, 23, 23, 0.6);
+  --card-bg-secondary: rgba(23, 23, 23, 0.3);
+
+  --primary: #fafafa;
+  --primary-hover: #e5e5e5;
+  --primary-light: rgba(38, 38, 38, 0.5);
+  --primary-text: #fafafa;
+
+  --success: #22c55e;
+  --success-light: #4ade80;
+
+  --muted: #525252;
+  --muted-bg: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-jetbrains-mono);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-jetbrains-mono);
+}
